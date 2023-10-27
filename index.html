@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>标签页</title>
+	<style>
+	
+			/* 定义搜索框样式 */
+		.search-box {
+			position: relative;
+			display: inline-block;
+			margin: 20px;
+			width: 90%;
+		}
+		.search-box input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 30px;
+			background-color: #f2f2f2;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease-in-out;
+			font-size: 16px;
+			color: #333;
+		}
+		.search-box input[type="text"]:focus {
+			outline: none;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			background-color: #fff;
+			color: #333;
+		}
+		.search-box button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px 15px;
+			background-color: #f2f2f2;
+			border: none;
+			border-radius: 0px 30px 30px 0px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			font-size: 16px;
+			color: #333;
+		}
+		.search-box button:hover {
+			background-color: #ddd;
+		}
+	
+	
+
+		/* 定义按钮样式 */
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #ffffff;
+			border: 2px solid black;
+			border-radius: 7px;
+			cursor: pointer;
+			margin-top: 8px;
+		}
+		/* 定义选中按钮样式 */
+		.btn-selected {
+			background-color: #ffffff;
+			
+		}
+
+		/* 定义带竖线的标题样式 */
+		.title-with-line {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 20px;
+			margin-top: 18px;
+		}
+
+		.title-with-line::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 5px;
+			height: 100%;
+			background-color: green;
+			vertical-align: middle;
+		}
+
+		.title-with-line h2 {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+			padding-left: 10px;
+		}
+		
+	</style>
+</head>
+<body>
+    
+	<html>
+		<head>
+			<title>页面标题</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+			</style>
+		</head>
+		<body>
+			<!-- 添加美化后的搜索框和搜索按钮 -->
+			<div class="search-box">
+				<input type="text" id="search" placeholder="搜索按钮关键字...">
+				<button id="search-btn">搜索</button>
+			</div>   
+      
+	<!-- 添加带竖线的标题 -->
+	<div class="title-with-line">
+		<h3>近期常用</h2>
+	</div>
+    
+	<!-- 定义按钮组 -->
+	<div>
+		<button class="btn btn-selected" onclick="location.href='https://openai.com/'">Open AI</button>
+		<button class="btn" onclick="location.href='https://chat.openai.com/chat'">Chat GPT</button>
+		<button class="btn" onclick="location.href='https://www.midjourney.com/'">Midjourney</button>
+		<button class="btn" onclick="location.href='https://labs.openai.com/'">DALL·E 2</button>
+		<button class="btn" onclick="location.href='https://app.leonardo.ai/'">Leonardo.Ai</button>
+		<button class="btn" onclick="location.href='https://playgroundai.com/'">Playground</button>
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>图片生成 AI</h2>
+		</div>		
+		<button class="btn" onclick="location.href='https://www.midjourney.com/'">Midjourney</button>
+		<button class="btn" onclick="location.href='https://labs.openai.com/'">DALL·E 2</button>
+		<button class="btn" onclick="location.href='https://app.leonardo.ai/'">Leonardo.Ai</button>
+		<button class="btn" onclick="location.href='https://playgroundai.com/'">Playground</button>
+        <button class="btn" onclick="location.href='https://www.gachafun.com/'">星图比特</button>
+        <button class="btn" onclick="location.href='https://stablediffusionweb.com/'">Stable Diffusion</button>
+        <button class="btn" onclick="location.href='https://creator.nightcafe.studio/'">NightCafe</button>
+        <button class="btn" onclick="location.href='https://halfwork.cn/'">HALFWORK</button>
+        <button class="btn" onclick="location.href='https://yige.baidu.com/'">百度·文心一格</button>
+        <button class="btn" onclick="location.href='https://www.zcool.com.cn/'">站酷梦笔</button>
+        <button class="btn" onclick="location.href='https://aigc.wondershare.cn/'">万兴爱画</button>
+        <button class="btn" onclick="location.href='https://www.aizuohua.com/'">爱作画</button>
+        <button class="btn" onclick="location.href='https://www.printidea.art/'">造梦日记</button>
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>聊天问答 AI</h2>
+		</div>
+        <button class="btn" onclick="location.href='https://chat.openai.com/chat'">ChatGPT</button>
+        <button class="btn" onclick="location.href='https://openai.com/research/gpt-4'">ChatGPT-4</button>
+        <button class="btn" onclick="location.href='https://tongyi.aliyun.com/'">通义千问-阿里</button>
+        <button class="btn" onclick="location.href='https://yiyan.baidu.com/welcome'">文心一言-百度</button>
+        <button class="btn" onclick="location.href='https://crfm.stanford.edu/'">Alpaca羊驼</button>
+        <button class="btn" onclick="location.href='https://www.jasper.ai/'">Jasper.AI</button>  
+		<button class="btn" onclick="location.href='https://aiapp.cc/'">创作王</button>
+        <button class="btn" onclick="location.href='https://www.giiso.com/'">Giiso写作机器人</button>
+        <button class="btn" onclick="location.href='https://effidit.qq.com/'">腾讯Effidit</button>
+        <button class="btn" onclick="location.href='https://aiwrite.wps.cn/'">WPS智能写作</button>
+        <button class="btn" onclick="location.href='https://www.aigaixie.com/'">iGaixie爱改写</button>
+
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>图片提示词 AI</h2>
+		</div>		
+        <button class="btn" onclick="location.href='https://github.com/rockbenben/ChatGPT-Shortcut'">Shortcut</button>
+        <button class="btn" onclick="location.href='https://www.howtoleverageai.com/midjourney-sticker-prompt-generator'">贴纸生成</button>
+        <button class="btn" onclick="location.href='https://prompt.noonshot.com/'">MJ</button>
+        <button class="btn" onclick="location.href='https://arthub.ai/'">Art</button>
+        <button class="btn" onclick="location.href='https://superprompts.com/'">Super</button>
+        <button class="btn" onclick="location.href='https://www.imiprompt.com/'">IMI</button>
+        <button class="btn" onclick="location.href='https://www.ai-art.com.cn/'">Ai-art</button>
+        <button class="btn" onclick="location.href='https://www.mbprompt.com/'">Mbprompt</button>
+        <button class="btn" onclick="location.href='https://learningprompt.wiki/'">Learning Prompt</button>
+        <button class="btn" onclick="location.href='https://civitai.com/'">Civitai</button>
+        <button class="btn" onclick="location.href='https://datafit.ai/'">Prompt</button>
+        <button class="btn" onclick="location.href='https://www.howtoleverageai.com/midjourney-prompt-generator'">Prompt Generator</button>
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>搜索引擎 AI</h2>
+		</div>		
+        <button class="btn" onclick="location.href='https://consensus.app/'">Consensus</button>
+        <button class="btn" onclick="location.href='https://topapps.ai/'">Topapps</button>
+        <button class="btn" onclick="location.href='https://app.kailualabs.com/'">Kailua</button>
+        <button class="btn" onclick="location.href='https://lexii.ai/'">Lexii</button>
+        <button class="btn" onclick="location.href='https://chatonai.org/'">ChatGPT</button>
+        <button class="btn" onclick="location.href='https://www.everypixel.com/'">Everypixel</button>
+        <button class="btn" onclick="location.href='https://bookabout.io/'">Bookabout</button>
+        <button class="btn" onclick="location.href='https://crowdview.ai/'">CrowdView</button>
+        <button class="btn" onclick="location.href='https://onemoreai.com/'">One</button>
+        <button class="btn" onclick="location.href='https://nyx.gallery/'">Nyx</button>
+        <button class="btn" onclick="location.href='https://www.algolia.com/'">Algolia</button>
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>机器人 AI</h2>
+		</div>		
+        <button class="btn" onclick="location.href='https://drinkwater.ai/'">DrinkWater</button>
+        <button class="btn" onclick="location.href='https://www.quickchat.ai/'">Quickchat</button>
+        <button class="btn" onclick="location.href='https://circlelabs.xyz/'">circlel</button>
+        <button class="btn" onclick="location.href='https://halfwork.cn/'">事半网</button>
+        <button class="btn" onclick="location.href='https://lingjingai.cn/'">灵境AI</button>
+        <button class="btn" onclick="location.href='https://askiweb.com/'">Aski</button>
+        <button class="btn" onclick="location.href='https://www.modaiyun.com/'">建筑设AI</button>
+        <button class="btn" onclick="location.href='https://fora.chat/'">ForA.Chat</button>
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>文字内容检测 AI</h2>
+		</div>		
+        <button class="btn" onclick="location.href='http://ai.sklccc.com/'">人民网</button>
+        <button class="btn" onclick="location.href='https://corrector.app/'">Corrector</button>
+        <button class="btn" onclick="location.href='https://originality.ai/'">AIGC-X</button>
+        <button class="btn" onclick="location.href='https://www.thomas.io/'">Thomas</button>
+        <button class="btn" onclick="location.href='https://nsfw.m1guelpf.me/'">M1guelp</button>
+        <button class="btn" onclick="location.href='https://gptkit.ai/'">GPTKit</button>
+        <button class="btn" onclick="location.href='https://contentatscale.ai/'">Content</button>
+        <button class="btn" onclick="location.href='https://checkforai.com/'">CheckforAi</button>
+        <button class="btn" onclick="location.href='https://www.aicheatcheck.com/'">AICheatCheck</button>
+        <button class="btn" onclick="location.href='https://www.gptminus1.com/'">GPT-MINUS1</button>
+        <button class="btn" onclick="location.href='https://detector.dng.ai/'">Detector</button>
+        <button class="btn" onclick="location.href='https://platform.openai.com/ai-text-classifier'">AI-Text-Classifier</button>
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>机器人 AI</h2>
+		</div>		
+        <button class="btn" onclick="location.href='https://drinkwater.ai/'">DrinkWater</button>
+        <button class="btn" onclick="location.href='https://www.quickchat.ai/'">Quickchat</button>
+        <button class="btn" onclick="location.href='https://circlelabs.xyz/'">circlel</button>
+        <button class="btn" onclick="location.href='https://halfwork.cn/'">事半网</button>
+        <button class="btn" onclick="location.href='https://lingjingai.cn/'">灵境AI</button>
+        <button class="btn" onclick="location.href='https://askiweb.com/'">Aski</button>
+        <button class="btn" onclick="location.href='https://www.modaiyun.com/'">建筑设AI</button>
+        <button class="btn" onclick="location.href='https://fora.chat/'">ForA.Chat</button>
+
+		<!-- 添加带竖线的标题 -->
+		<div class="title-with-line">
+			<h3>灵感 设计 素材</h2>
+		</div>
+		<button class="btn" onclick="location.href='https://webdesignclip.com/'">WebDesignclip</button>
+		<button class="btn" onclick="location.href='http://www.4db.cc/'">4DB-日系</button>
+		<button class="btn" onclick="location.href='https://wallspic.com/'">桌面壁纸</button>
+		<button class="btn" onclick="location.href='https://www.designspiration.com/'">Designspiration</button>
+		<button class="btn" onclick="location.href='https://dribbble.com/'">Dribbble</button>
+		<button class="btn" onclick="location.href='https://unsplash.com/'">Unsplash</button>
+
+
+	<!-- 添加带竖线的标题 -->
+	<div class="title-with-line">
+		<h3>这是一个带竖线的标题</h2>
+	</div>		
+		<button class="btn" onclick="location.href='https://www.bing.com'">Bing</button>		
+		<button class="btn" onclick="location.href='https://www.bing.com'">Bing</button>	
+		<button class="btn" onclick="location.href='https://www.bing.com'">Bing</button>	
+		<button class="btn" onclick="location.href='https://www.bing.com'">Bing</button>	
+		<button class="btn" onclick="location.href='https://www.bing.com'">Bing</button>	
+		<button class="btn" onclick="location.href='https://www.bing.com'">Bing</button>
+
+	</div>
+</body>
+</html>
+
+
+
+	<script>
+		// 获取搜索框、搜索按钮和要搜索的按钮
+		const searchInput = document.getElementById("search");
+		const searchBtn = document.getElementById("search-btn");
+		const btns = document.querySelectorAll(".btn");
+
+		// 当用户点击搜索按钮时，显示匹配的按钮
+		searchBtn.addEventListener("click", function() {
+			const searchText = searchInput.value;
+			for (let i = 0; i < btns.length; i++) {
+				const btnText = btns[i].textContent.toLowerCase();
+				if (btnText.includes(searchText.toLowerCase())) {
+					btns[i].style.display = "inline-block";
+				} else {
+					btns[i].style.display = "none";
+				}
+			}
+		});
+
+		// 当用户在搜索框中输入关键词时，显示匹配的按钮
+		searchInput.addEventListener("input", function() {
+			const searchText = searchInput.value;
+			for (let i = 0; i < btns.length; i++) {
+				const btnText = btns[i].textContent.toLowerCase();
+				if (btnText.includes(searchText.toLowerCase())) {
+					btns[i].style.display = "inline-block";
+				} else {
+					btns[i].style.display = "none";
+				}
+			}
+		});
+	</script>
+</body>
+</html>
